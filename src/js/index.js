@@ -19,13 +19,14 @@ sun.addEventListener("click", () => {
 		isDark = true;
 		document.documentElement.style.setProperty("--sky", "#090809");
 		document.documentElement.style.setProperty("--text-color", "#F1FFE7");
-		document.documentElement.style.setProperty("--sun", "../assets/img/moon.png");
+		document.documentElement.style.setProperty("--sun", "url(moon.png)");
 		createContent(".sun__text--js", "the night is dark");
 	} else {
 		console.log("just another bright day");
 		isDark = false;
 		document.documentElement.style.setProperty("--sky", "#1AC8ED");
 		document.documentElement.style.setProperty("--text-color", "#090809");
+		document.documentElement.style.setProperty("--sun", "url(sun.png)");
 		createContent(".sun__text--js", "such a lovely day");
 	}
 });
