@@ -15,12 +15,15 @@ html {
 
 body {
 	background-color: var(--sky);
+	background-image: var(--stars);
+	background-size: 50%;
+	background-repeat: repeat;
 	transition: 1s;
 }
 
 .main {
 	height: 100vh;
-	width: 700px;
+	width: 750px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
