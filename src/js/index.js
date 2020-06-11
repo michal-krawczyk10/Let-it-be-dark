@@ -28,7 +28,6 @@ sun.addEventListener("click", () => {
 		document.documentElement.style.setProperty("--sky", "#1AC8ED");
 		document.documentElement.style.setProperty("--text-color", "#090809");
 		document.documentElement.style.setProperty("--sun", "url(sun.png)");
-		document.documentElement.style.setProperty("--stars", "none");
 		createContent(".sun__text--js", "such a lovely day");
 	}
 });

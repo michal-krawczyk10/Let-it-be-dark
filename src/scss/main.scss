@@ -15,19 +15,22 @@ html {
 
 body {
 	background-color: var(--sky);
-	background-image: var(--stars);
-	background-size: 30%;
-	background-repeat: repeat;
 	transition: 1s;
 }
 
 .main {
 	height: 100vh;
-	width: 750px;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin: auto;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-around;
+		margin: auto;
+		max-width: 1000px;
+	}
 }
 
 .sun {
@@ -45,7 +48,7 @@ body {
 		cursor: pointer;
 	}
 	&__text {
-		font-size: 48px;
+		font-size: 32px;
 		font-family: "Lucida Sans", "Lucida Sans Regular", Geneva, Verdana,
 			sans-serif;
 		color: var(--text-color);
@@ -53,6 +56,9 @@ body {
 		&--small {
 			display: block;
 			font-size: 24px;
+		}
+		@media screen and (min-width: 768px) {
+			font-size: 48px;
 		}
 	}
 	&__dark {
