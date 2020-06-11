@@ -30,7 +30,8 @@ body {
 .sun {
 	width: 250px;
 	height: 250px;
-	background-image: var(--sun) ;
+	background-image: var(--sun);
+  background-size: 250px 250px;
 	background-color: inherit;
 	background-repeat: no-repeat;
 	border-radius: 50%;
@@ -47,6 +48,6 @@ body {
 		color: var(--text-color);
 	}
 	&__dark {
-background-image: url(../assets/img/moon.png);
+    display: none;
 	}
 }

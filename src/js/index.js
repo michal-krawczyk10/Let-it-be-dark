@@ -13,10 +13,10 @@ sun.addEventListener("click", () => {
 		console.log("just another bright day");
 		isDark = true;
 		document.documentElement.style.setProperty("--sky", "#090809");
-		document.documentElement.style.setProperty(
-			"--sun",
-			"url('../assets/img/moon.png')"
-		);
+		// document.documentElement.style.setProperty(
+		// 	"--sun",
+		// 	"url('../assets/img/sun.png')"
+		// );
 	} else {
 		console.log("the night is dark as buttom of the coal mine");
 		isDark = false;
