@@ -6,14 +6,20 @@ console.log("HELLO 🚀");
 
 let isDark = false;
 
-document.documentElement.style.setProperty("--sky", "#090809");
-
 const sun = document.querySelector(".sun--js");
 
 sun.addEventListener("click", () => {
 	if (isDark == false) {
-		console.log("it is bright day");
+		console.log("just another bright day");
+		isDark = true;
+		document.documentElement.style.setProperty("--sky", "#090809");
+		document.documentElement.style.setProperty(
+			"--sun",
+			"url('../assets/img/moon.png')"
+		);
 	} else {
-		console.log("this night is dark as your soul");
+		console.log("the night is dark as buttom of the coal mine");
+		isDark = false;
+		document.documentElement.style.setProperty("--sky", "#1AC8ED");
 	}
 });

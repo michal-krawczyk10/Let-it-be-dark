@@ -15,11 +15,12 @@ html {
 
 body {
 	background-color: var(--sky);
+	transition: 1s;
 }
 
 .main {
 	height: 100vh;
-	width: 1200px;
+	width: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,13 +28,25 @@ body {
 }
 
 .sun {
-	width: 200px;
-	height: 200px;
-	background-color: $sun;
+	width: 250px;
+	height: 250px;
+	background-image: var(--sun) ;
+	background-color: inherit;
+	background-repeat: no-repeat;
 	border-radius: 50%;
 	border: none;
 	outline: none;
+	transform: 1s;
 	&:hover {
 		cursor: pointer;
+	}
+	&__text {
+		font-size: 2em;
+		font-family: "Lucida Sans", "Lucida Sans Regular", Geneva, Verdana,
+			sans-serif;
+		color: var(--text-color);
+	}
+	&__dark {
+background-image: url(../assets/img/moon.png);
 	}
 }
