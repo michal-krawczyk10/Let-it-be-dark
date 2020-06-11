@@ -8,18 +8,22 @@ let isDark = false;
 
 const sun = document.querySelector(".sun--js");
 
+function createContent(querySelectorContent, content) {
+	const item = document.querySelector(querySelectorContent);
+	item.innerHTML = content;
+}
+
 sun.addEventListener("click", () => {
 	if (isDark == false) {
-		console.log("just another bright day");
+		console.log("the night is dark as the buttom of the coal mine");
 		isDark = true;
 		document.documentElement.style.setProperty("--sky", "#090809");
-		// document.documentElement.style.setProperty(
-		// 	"--sun",
-		// 	"url('../assets/img/sun.png')"
-		// );
+		createContent(".sun__text--js", "the night is dark");
+    document.documentElement.style.setProperty(" --text-color, #F1FFE7")
 	} else {
-		console.log("the night is dark as buttom of the coal mine");
+		console.log("just another bright day");
 		isDark = false;
 		document.documentElement.style.setProperty("--sky", "#1AC8ED");
+		createContent(".sun__text--js", "such a lovely day");
 	}
 });
