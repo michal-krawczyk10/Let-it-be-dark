@@ -40,28 +40,23 @@ body {
 	background-size: 250px 250px;
 	background-color: inherit;
 	background-repeat: no-repeat;
-	border-radius: 50%;
 	border: none;
 	outline: none;
 	transition: 1s;
 	&:hover {
 		cursor: pointer;
-	}
+	} 
 	&__text {
 		font-size: 32px;
-		font-family: "Lucida Sans", "Lucida Sans Regular", Geneva, Verdana,
-			sans-serif;
+		font-family: "Lucida Sans", Verdana, sans-serif;
 		color: var(--text-color);
 		transition: 1s;
+		@media screen and (min-width: 768px) {
+			font-size: 48px;
+		}
 		&--small {
 			display: block;
 			font-size: 24px;
 		}
-		@media screen and (min-width: 768px) {
-			font-size: 48px;
-		}
-	}
-	&__dark {
-		display: none;
 	}
 }

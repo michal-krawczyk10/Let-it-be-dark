@@ -20,7 +20,6 @@ sun.addEventListener("click", () => {
 		document.documentElement.style.setProperty("--sky", "#090809");
 		document.documentElement.style.setProperty("--text-color", "#F1FFE7");
 		document.documentElement.style.setProperty("--sun", "url(moon.png)");
-		document.documentElement.style.setProperty("--stars", "url(stars.png)");
 		createContent(".sun__text--js", "the night is dark");
 	} else {
 		console.log("just another bright day");
